@@ -66,7 +66,7 @@ a:link {
   margin:0 auto;
   white-space:nowrap;
 }
-a#home {
+a#pages {
   display:inline-block;
   background:#222;
   width: 103px;
@@ -76,11 +76,11 @@ a#home {
   padding-top: 15px;
 }
 
-a#home:hover {
+a#pages:hover {
   background:#C6F500;
   color:#000; 
 }
-a#videos {
+a#sign_up {
   display:inline-block;
   background:#222;
   width: 103px;
@@ -90,11 +90,11 @@ a#videos {
   padding-top: 15px;
 }
 
-a#videos:hover {
+a#sign_up:hover {
   background:#C6F500; 
   color:#000;
 }
-a#photos {
+a#new_page {
   display:inline-block;
   width: 103px;
   height: 35px;
@@ -104,7 +104,7 @@ a#photos {
   padding-top: 15px;
 }
 
-a#photos:hover {
+a#new_page:hover {
   background:#C6F500; 
   color:#000;
 }

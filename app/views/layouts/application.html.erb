@@ -11,19 +11,13 @@
   <nav id="main-nav">
     <ul>
       <li>
-              <a id="home" href="">Pages</a>
+            <%= link_to "Pages", pages_path, id: 'pages'%>
       </li>
       <li>
-              <a id="videos" href="">Video</a>
+              <%= link_to "Sign up", signup_path, id: 'sign_up'%>
             </li>
             <li>
-              <a id="photos" href="../photo.php">Photos</a>
-            </li>
-            <li>
-              <a id="about" href="#">About</a>
-            </li>
-            <li>
-              <a id="contact" href="../contact.php">Contact</a>
+              <%= link_to "New page", new_page_path, id: 'new_page'%>
             </li>
     </ul>
   </nav>
