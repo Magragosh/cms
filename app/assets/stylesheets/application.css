@@ -11,6 +11,10 @@
  *= require_self
  *= require_tree .
 */
+* {
+    padding: 0px;
+    margin: 0px
+}
 body {
   background: #222;
   font-family: Verdana, Helvetica, Arial;
@@ -44,11 +48,12 @@ a:link {
   background-repeat:no-repeat;
   background-position:center;
   color: #000;
-  padding-left: 190px;
+  padding-left: 150px;
+
 }
 
 #main-nav li {
-  display:inline;
+  display:inline-block;
 }
 
 #main-nav li:first-child {
