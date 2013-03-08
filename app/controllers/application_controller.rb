@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
 	helper_method :current_user
 
 	def require_auth
-		redirect_to login_path, notice: "Not authorized" unless current_user
+		redirect_to login_path, notice: "Not authorized, Please log in first" unless current_user
 	end
 end
