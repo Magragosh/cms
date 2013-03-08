@@ -187,14 +187,14 @@ a#contact:hover {
 
 }
 #Editor{
-  width: 980px;
+  width: 910px;
   height: auto;
   background:#C6F500;
   background-repeat: none !important;
   border:10px;
   border-width: 10px;
   border-color: #000;
-  margin-left: 100px;
+  margin-left: 150px;
   padding-right:50px;
   padding-left: 50px;
   padding-top: 20px;
