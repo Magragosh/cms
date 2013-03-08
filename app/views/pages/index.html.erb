@@ -1,0 +1,53 @@
+  <div id="main-nav-holder">
+  <nav id="main-nav">
+    <ul>
+      <li>
+              <a id="home" href="../index.php">Home</a>
+      </li>
+      <li>
+              <a id="videos" href="">Video</a>
+            </li>
+            <li>
+              <a id="photos" href="../photo.php">Photos</a>
+            </li>
+            <li>
+              <a id="about" href="#">About</a>
+            </li>
+            <li>
+              <a id="contact" href="../contact.php">Contact</a>
+            </li>
+    </ul>
+  </nav>
+</div>
+<div id="content">
+  
+<h1>Listing pages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr>
+    <td style="padding-right:10px;"><%= page.name %></td>
+    <td><%= page.content %></td>
+    <td style="padding-left:25px;"><%= link_to 'Show', page %></td>
+    <td><%= link_to 'Edit', edit_page_path(page) %></td>
+    <td><%= link_to 'Destroy', page, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Page', new_page_path %>
+<div id="logout" style="float:right; padding-right:20px;">
+<%= link_to 'Logout', logout_path %>
+</div>
+</div>

@@ -1,0 +1,240 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+a:visited { 
+  text-decoration: none !important; 
+  color: #FFF;
+}
+a:link { 
+  text-decoration: none !important;
+  color: #FFF;
+}
+
+#main-nav-holder {
+  height:auto;
+}
+#main-nav ul {
+  height: auto;
+  margin-top:170px;
+  background:#222;
+  background-repeat:no-repeat;
+  background-position:center;
+  color: #000;
+  padding-left: 190px;
+}
+
+#main-nav li {
+  display:inline;
+}
+
+#main-nav li:first-child {
+
+}
+@media screen and (min-width: 965px){ 
+.sticky #main-nav {
+  position:fixed;
+  top:0;
+  width:960px;
+  z-index:99999999999999999999;
+}
+
+.sticky #main-nav ul {
+  margin:0 auto;
+  white-space:nowrap;
+}
+a#home {
+  display:inline-block;
+  background:#222;
+  width: 103px;
+  height: 35px;
+  color:#fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a#home:hover {
+  background:#C6F500;
+  color:#000; 
+}
+a#videos {
+  display:inline-block;
+  background:#222;
+  width: 103px;
+  height: 35px;
+  color:#fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a#videos:hover {
+  background:#C6F500; 
+  color:#000;
+}
+a#photos {
+  display:inline-block;
+  width: 103px;
+  height: 35px;
+  background:#222;
+  color:#fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a#photos:hover {
+  background:#C6F500; 
+  color:#000;
+}
+a#about {
+  display:inline-block;
+  width: 103px;
+  height: 35px;
+  background:#222;
+  color:#fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a#about:hover {
+  background:#C6F500; 
+  color:#000;
+}
+a#contact {
+  display:inline-block;
+  width: 103px;
+  height: 35px;
+  background:#222;
+  color:#fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a#contact:hover {
+  background:#C6F500;
+  color:#000;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+#content{
+	width: 910px;
+  min-height: 200px;
+	height: auto;
+  background:#C6F500;
+  background-repeat: none !important;
+	border:10px;
+	border-width: 10px;
+	border-color: #000;
+	margin-left: 150px;
+	padding-left: 50px;
+	padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+#Editor{
+  width: 980px;
+  height: auto;
+  background:#C6F500;
+  background-repeat: none !important;
+  border:10px;
+  border-width: 10px;
+  border-color: #000;
+  margin-left: 100px;
+  margin-top: 150px;
+  padding-right:50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+form .field, form .actions {
+  margin: 12px 0;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 15px 0;
+}
