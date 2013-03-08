@@ -12,7 +12,7 @@
  *= require_tree .
 */
 body {
-  background-color: #4B7399;
+  background: #222;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -190,7 +190,6 @@ a#contact:hover {
   border-width: 10px;
   border-color: #000;
   margin-left: 100px;
-  margin-top: 150px;
   padding-right:50px;
   padding-left: 50px;
   padding-top: 20px;
