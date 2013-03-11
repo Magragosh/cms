@@ -37,6 +37,18 @@ a:link {
   text-decoration: none !important;
   color: #FFF;
 }
+a#pages.current{
+  background:#C6F500; 
+  color:#000;
+}
+a#sign_up.current{
+  background:#C6F500; 
+  color:#000;
+}
+a#new_page.current{
+  background:#C6F500; 
+  color:#000;
+}
 
 #main-nav-holder {
   height:auto;
