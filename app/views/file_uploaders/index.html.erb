@@ -1,0 +1,26 @@
+<div id="content">
+<h1 style="padding-bottom:20px;">Listing file uploads</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @file_uploaders.each do |file_uploader| %>
+  <tr>
+    <td><%= link_to 'Show', file_uploader %></td>
+    <td><%= link_to 'Edit', edit_file_uploader_path(file_uploader) %></td>
+    <td><%= link_to 'Destroy', file_uploader, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New File uploader', new_file_uploader_path %>
+<div id="logout" style="float:right; padding-right:20px;">
+<%= link_to 'Logout', logout_path %>
+</div>
+</div>

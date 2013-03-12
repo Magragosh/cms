@@ -1,4 +1,6 @@
 CMS::Application.routes.draw do
+  resources :file_uploaders
+
   get "home/index"
 
   resources :pages
@@ -28,6 +30,7 @@ CMS::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  get "newFile" => "file_uploaders#new", :as => "newFile"
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"

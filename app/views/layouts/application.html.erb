@@ -19,6 +19,9 @@
             <li>
               <%= link_to "New page", new_page_path, id: 'new_page', class: current_page?(new_page_path) ? 'current' : ''%>
             </li>
+            <li>
+              <%= link_to "Upload file", file_uploaders_path, id: 'new_file', class: current_page?(file_uploaders_path) ? 'current' : ''%>
+            </li>
     </ul>
   </nav>
 </div>

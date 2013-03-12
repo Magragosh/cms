@@ -49,6 +49,10 @@ a#new_page.current{
   background:#C6F500; 
   color:#000;
 }
+a#new_file.current{
+  background:#C6F500; 
+  color:#000;
+}
 
 #main-nav-holder {
   height:auto;
@@ -125,33 +129,19 @@ a#new_page:hover {
   background:#C6F500; 
   color:#000;
 }
-a#about {
+a#new_file {
   display:inline-block;
+  background:#222;
   width: 103px;
   height: 35px;
-  background:#222;
   color:#fff;
   text-align: center;
   padding-top: 15px;
 }
 
-a#about:hover {
-  background:#C6F500; 
-  color:#000;
-}
-a#contact {
-  display:inline-block;
-  width: 103px;
-  height: 35px;
-  background:#222;
-  color:#fff;
-  text-align: center;
-  padding-top: 15px;
-}
-
-a#contact:hover {
+a#new_file:hover {
   background:#C6F500;
-  color:#000;
+  color:#000; 
 }
 
 .clear {
