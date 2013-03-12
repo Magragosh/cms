@@ -13,14 +13,18 @@
       <li>
             <%= link_to "Pages", pages_path, id: 'pages', class: current_page?(pages_path) ? 'current' : '' %>
       </li>
-      <li>
-              <%= link_to "Sign up", signup_path, id: 'sign_up', class: current_page?(signup_path) ? 'current' : ''%>
-            </li>
+      
             <li>
               <%= link_to "New page", new_page_path, id: 'new_page', class: current_page?(new_page_path) ? 'current' : ''%>
             </li>
             <li>
-              <%= link_to "Upload file", file_uploaders_path, id: 'new_file', class: current_page?(file_uploaders_path) ? 'current' : ''%>
+              <%= link_to "Uploaded files", file_uploaders_path, id: 'new_file', class: current_page?(file_uploaders_path) ? 'current' : ''%>
+            </li>
+            <li>
+              <%= link_to "Upload file", newFile_path, id: 'new_file', class: current_page?(newFile_path) ? 'current' : ''%>
+            </li>
+            <li>
+              <%= link_to "Sign up", signup_path, id: 'sign_up', class: current_page?(signup_path) ? 'current' : ''%>
             </li>
     </ul>
   </nav>

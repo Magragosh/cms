@@ -1,5 +1,4 @@
 class FileUploader < ActiveRecord::Base
-	attr_accessible :gallery_id, :name, :image, :remote_image_url
-  	belongs_to :gallery
-  	mount_uploader :image, ImageUploader
+	attr_accessible :name, :file, :remote_file_url
+  	mount_uploader :file
 end
