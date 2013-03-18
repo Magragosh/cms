@@ -5,7 +5,7 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'ace-rails-ap'
 
@@ -15,6 +15,9 @@ gem 'truncate_html'
 
 gem 'carrierwave'
 
+gem 'bundler'
+
+gem "libv8", "~> 3.11.8.13"
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -19,6 +19,7 @@ body {
   background: #222;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+  color:222;
 }
 
 a img {
@@ -26,16 +27,16 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #222;
 }
 
 a:visited { 
   text-decoration: none !important; 
-  color: #FFF;
+  color: #222;
 }
 a:link { 
   text-decoration: none !important;
-  color: #FFF;
+  color: #222;
 }
 a#pages.current{
   background:#C6F500; 

@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130313093638) do
 
-  create_table "file_uploaders", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "files", :force => true do |t|
-    t.string "image"
-  end
-
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.text     "content"
