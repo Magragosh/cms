@@ -1,10 +1,8 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 * {
     padding: 0px;
     margin: 0px
 }
+
 body {
   background: #222;
   font-family: Verdana, Helvetica, Arial;
@@ -24,22 +22,27 @@ a:visited {
   text-decoration: none !important; 
   color: #222;
 }
+
 a:link { 
   text-decoration: none !important;
   color: #222;
 }
+
 a#pages.current{
   background:#C6F500; 
   color:#000;
 }
+
 a#sign_up.current{
   background:#C6F500; 
   color:#000;
 }
+
 a#new_page.current{
   background:#C6F500; 
   color:#000;
 }
+
 a#new_file.current{
   background:#C6F500; 
   color:#000;
@@ -48,6 +51,7 @@ a#new_file.current{
 #main-nav-holder {
   height:auto;
 }
+
 #main-nav ul {
   height: auto;
   margin-top:170px;
@@ -56,28 +60,17 @@ a#new_file.current{
   background-position:center;
   color: #000;
   padding-left: 150px;
-
 }
 
 #main-nav li {
   display:inline-block;
 }
 
-#main-nav li:first-child {
-
-}
-@media screen and (min-width: 965px){ 
-.sticky #main-nav {
-  position:fixed;
-  top:0;
-  width:960px;
-  z-index:99999999999999999999;
-}
-
 .sticky #main-nav ul {
   margin:0 auto;
   white-space:nowrap;
 }
+
 a#pages {
   display:inline-block;
   background:#222;
@@ -92,6 +85,7 @@ a#pages:hover {
   background:#C6F500;
   color:#000; 
 }
+
 a#sign_up {
   display:inline-block;
   background:#222;
@@ -106,6 +100,7 @@ a#sign_up:hover {
   background:#C6F500; 
   color:#000;
 }
+
 a#new_page {
   display:inline-block;
   width: 103px;
@@ -120,6 +115,7 @@ a#new_page:hover {
   background:#C6F500; 
   color:#000;
 }
+
 a#new_file {
   display:inline-block;
   background:#222;
@@ -164,6 +160,7 @@ a#new_file:hover {
   background-color: #FCC;
   border: solid 1px #C66;
 }
+
 #content{
 	width: 910px;
   min-height: 200px;
@@ -179,6 +176,7 @@ a#new_file:hover {
   padding-bottom: 30px;
 
 }
+
 #Editor{
   width: 910px;
   height: auto;
