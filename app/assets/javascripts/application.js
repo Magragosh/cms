@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
 //= require ace/ace
-//= require ace/theme-monokai.js
-//= require ace/mode-html.js
+//= require ace/theme-monokai
+//= require ace/mode-html
+//= require_tree .
