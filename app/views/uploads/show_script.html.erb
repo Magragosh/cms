@@ -1,0 +1,35 @@
+<div id="content">
+	<h1 style="padding-bottom:20px;">Upload</h1>
+	<p id="notice"><%= notice %></p>
+
+<style type="text/css" media="screen">
+  #editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+</style>
+
+
+<%= form_for(@upload) do |f| %>
+  
+
+  <div style="position:relative; width:94%; height:300px">
+    
+    <div id="editor" style="padding-top:15px;"></div>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+	<%= link_to 'Edit', edit_upload_path(@upload) %> |
+	<%= link_to 'Back', uploads_path %>
+	<div id="logout" style="float:right; padding-right:20px;">
+		<%= link_to 'Logout', logout_path %>
+	</div>
+</div>
