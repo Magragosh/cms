@@ -36,6 +36,9 @@ class UploadsController < ApplicationController
   # GET /uploads/1/edit
   def edit
     @upload = Upload.find(params[:id])
+    @content = File.open(@upload.image.file.path) do |f|
+      f.read()
+    end
   end
 
   # POST /uploads
