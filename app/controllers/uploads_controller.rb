@@ -36,8 +36,17 @@ class UploadsController < ApplicationController
   # GET /uploads/1/edit
   def edit
     @upload = Upload.find(params[:id])
-    @content = File.open(@upload.image.file.path) do |f|
-      f.read()
+    File.open(@upload.image.file.path) do |f|
+      @content = f.read()
+    end
+
+    modes = {'html'=> 'html', 'css'=> 'stylesheet', 'js'=> 'javascript'}
+    @mode = modes[]
+
+    if @upload.image?
+      render :edit_image
+    else
+      render :edit_script
     end
   end
 

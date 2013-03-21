@@ -4,7 +4,8 @@
 $ ->
   editor = ace.edit("editor")
   textarea = $('#editor_text').hide()
-  Mode = require('ace/mode/html').Mode
+  mode = $('#editor_text').data('mode')
+  Mode = require('ace/mode/'+mode).Mode
 
   editor.getSession().setMode(new Mode())
   editor.setTheme("ace/theme/monokai")

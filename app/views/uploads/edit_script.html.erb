@@ -1,6 +1,5 @@
 <div id="Editor">
 <h1 style="padding-bottom:20px;">Editing upload</h1>
-
 <style type="text/css" media="screen">
   #editor { 
     position: absolute;
@@ -12,16 +11,12 @@
 </style>
 
 
-<%= form_for(@page) do |f| %>
+<%= form_for(@upload) do |f| %>
 
-  <input type="text" name="upload[name]" style="display:none;">Name</input>
-
-
-  <%= f.text_field :name %>
 
 
   <div style="position:relative; width:100%; height:300px">
-    <%= f.text_area :content, id:"editor_text" %>
+    <%= text_area_tag 'content', @content, id:"editor_text", data: {mode: @mode} %>
     <div id="editor" style="padding-top:15px;"></div>
   </div>
  
