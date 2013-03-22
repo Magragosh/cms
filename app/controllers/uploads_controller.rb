@@ -40,8 +40,8 @@ class UploadsController < ApplicationController
       @content = f.read()
     end
 
-    modes = {'html'=> 'html', 'css'=> 'stylesheet', 'js'=> 'javascript'}
-    @mode = modes[]
+    modes = {'html'=> 'html', 'css'=> 'css', 'js'=> 'javascript'}
+    @mode = modes[@upload.image.file.extension]
 
     if @upload.image?
       render :edit_image

@@ -22,10 +22,12 @@
       </div>
     </div>
   <% end %>
-  <input type="text" name="page[name]" style="display:none;">Name</input>
 
-
+  <%= f.label :name %>
   <%= f.text_field :name %>
+
+  <%= f.label 'Custom URL' %>
+  <%= f.text_field :slug %>
 
 
   <div style="position:relative; width:100%; height:300px">
